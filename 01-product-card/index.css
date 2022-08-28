@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 60.25px 0;
+  background-color: #f6f6f6;
+}
+.main__title {
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+.main__cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 20px 20px;
+}
+.cards-container__item {
+  position: relative;
+  max-width: 380px;
+  height: 481.72px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 45px -4px rgba(0, 0, 0, 0.18);
+}
+.item__tickets-container {
+  position: absolute;
+  top: 16.66px;
+  left: 16.73px;
+  display: flex;
+
+  gap: 0 17px;
+}
+.tickets-container__trigger {
+  padding: 0 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2f2f2f;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+.new-item {
+  background-color: #fdcff3;
+}
+.last-item {
+  background-color: #ffcf56;
+}
+.item__img {
+  display: block;
+}
+.cards-container__item-content {
+  padding: 24px;
+}
+.item-content__title {
+  margin-bottom: 16px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2f2f2f;
+}
+.item-content__text {
+  font-weight: 400;
+  line-height: 24px;
+  color: #2f2f2f;
+}
+.item-content__button {
+  position: absolute;
+  bottom: 24px;
+  width: 332px;
+  height: 48px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25.38px;
+  color: #42940f;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #42940f;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.item-content__button:disabled {
+  color: white;
+  background-color: #4e4e4e;
+  border: 2px solid #4e4e4e;
+  pointer-events: none;
+}
+.item-content__button:hover {
+  color: white;
+  background-color: #42940f;
+}
+.item-content__button:active {
+  color: white;
+  background-color: #1f5200;
+}
+@media (max-width: 500px) {
+  .main__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 390px) {
+  .main__title {
+    font-size: 30px;
+  }
+  .cards-container__item {
+    max-width: 340px;
+  }
+  .cards-container__item-content {
+    padding: 4px;
+  }
+}
